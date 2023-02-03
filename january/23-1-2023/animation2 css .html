@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+          .box{
+            height: 300px;
+            width: 200px;
+            border: solid gray;
+            margin: auto;
+            animation-name:boxcolorchange;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+          }
+          @keyframes boxcolorchange{
+            10%{background-color: aqua; width: 800px;}
+            20%{background-color: blue; width: 1250px;}
+            30%{background-color: aqua;}
+            40%{background-color: blue;}
+
+            50%{background-color: aqua;}
+            60%{background-color: blue;}
+
+            70%{background-color: aqua;}
+            80%{background-color: blue;}
+
+            90%{background-color: aqua;}
+            100%{background-color: blue;}
+
+
+          }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="box"></div>
+
+    </body>
+</html>

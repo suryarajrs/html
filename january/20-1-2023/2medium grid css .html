@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            grid-area: header;
+        }
+        .banner{
+            grid-area: banner;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .main{
+            grid-area: main;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 'header header header header '
+               'banner banner banner banner '
+               'sidebar main main main '
+               'footer footer footer footer';
+               gap: 15px;
+              
+        }
+        .header,.footer{
+            height: 150px;
+            background-color: blue;
+        }
+        .banner{
+            height: 100px;
+            background-color: green;
+        }
+        .sidebar{
+            min-height: 555px;
+            background-color: black;
+        }
+        .main{
+            min-height: 555px;
+            background-color: pink;
+        }
+        
+        .head{
+            height: 95px;
+            width: 140px;
+            background-color: gray;
+            padding: 27px;
+            
+
+        }
+        ol{
+            list-style-type:none;
+        }
+        li:hover{
+            border: 2px solid black;
+        } 
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+        }
+         .container-flex{   
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 142px;
+         }
+         .flex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+         }
+         .container-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+         }
+         .boxx{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            background-image: url('./fb.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+
+     
+
+    </style>
+
+</head>
+
+<body>
+ <div class="container">
+    <div class="header"></div>
+    <div class="banner"></div>     
+    <div class="sidebar">
+           <div class="flex">
+            <div class="box"></div>
+            <div class="box"></div>
+           </div>
+    </div>
+    <div class="main">
+        <div class="container-main">
+            <div class="boxx"></div>
+            <div class="boxx"></div>
+            <div class="boxx"></div>
+            <div class="boxx"></div>
+           
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-flex">
+            <div class="head">
+                <ol type="none">
+                    <li>contacts us</li>
+                    <li>About us</li>
+                    <li>Readme</li>
+                </ol>
+            </div>
+            <div class="head">
+                <ol type="none">
+                    <li>contacts us</li>
+                    <li>About us</li>
+                    <li>Readme</li>
+                </ol>
+            </div>
+            <div class="head">
+                <ol type="none">
+                    <li>contacts us</li>
+                    <li>About us</li>
+                    <li>Readme</li>
+                </ol>
+            </div>
+            <div class="head">
+                <ol type="none">
+                    <li>contacts us</li>
+                    <li>About us</li>
+                    <li>Readme</li>
+                </ol>
+            </div>
+            </div>
+    </div>
+ </div>
+
+</body>
+
+</html>
